@@ -1,4 +1,5 @@
-package assignment;
+// Problem 11
+// Remove duplicate elements(String/int) from an array
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +9,7 @@ public class Problem11 {
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<>();
-        Collections.addAll(list, 1, 2, 3, 4, 5, 4, 3, 2, 1);
+        Collections.addAll(list, 1, 2, 3, 4, 5, 4, 3, 2, 1); // input sample values to be checked
 
         ArrayList<Integer> noDuplicateList = new ArrayList<>(); // Create new temporary list
 
@@ -18,6 +19,6 @@ public class Problem11 {
             }
         }
 
-        System.out.println(noDuplicateList);
+        System.out.println(noDuplicateList); // prints out the noDuplicate array
     }
 }
