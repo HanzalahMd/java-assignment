@@ -2,8 +2,6 @@
 // eg: n = 6
 // 6 * 5 * 4 * 3 * 2 * 1 = 720
 
-package assignment;
-
 import java.util.Scanner;
 
 public class Problem17 {
@@ -25,6 +23,6 @@ public class Problem17 {
                 System.out.print(n + " = ");
             }
         }
-        System.out.print(total);
+        System.out.print(total); // prints the total calculated number
     }
 }
