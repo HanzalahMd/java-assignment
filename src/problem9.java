@@ -1,8 +1,5 @@
 // How do I determine whether an array contains a particular value in Java?
 
-package assignment;
-
-
 import java.util.Scanner;
 
 public class problem9 {
@@ -21,6 +18,7 @@ public class problem9 {
 
     public static void main(String[] args) {
 
+        // Create a sample array to be checked
         String[] testArray = {"John", "Sam", "Alex", "Amit"};
 
         Scanner refScanner = new Scanner(System.in);
