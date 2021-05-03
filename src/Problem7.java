@@ -5,38 +5,39 @@
 // 4567654
 // 567898765
 
-package assignment;
-
-import java.io.IOException;
+import java.util.Scanner;
 
 public class Problem7 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
 
-        InputReader refReader = new InputReader();
-        int numOfIndex = refReader.getNumOfIndex();
+        // Get the number of rows from the user input
+        Scanner refScanner = new Scanner(System.in);
+        System.out.println("What is the max index number?");
+        int numOfIndex = refScanner.nextInt();
 
-        int row = 1;
-        for(int i = 1; i <= numOfIndex; i++) {
+        // Declare 2 variable, 'row' is for the outer loop and 'changeNumber' is for the inner loop
+        int row = 1; // row number will start with 1
+        for(int i = 1; i <= numOfIndex; i++) { // index ends with user input number
 
-            if (i % 2 == 0) {
+            if (i % 2 == 0) { // skips the index divisible by 2
                 continue;
             }
 
-            int changeNumber = row;
+            int changeNumber = row; // the inner number will get the current row number
 
-            while (changeNumber < i) {
+            while (changeNumber < i) { // will run this until changeNumber == outer loop index number
                 System.out.print(changeNumber);
-                changeNumber++;
+                changeNumber++; // increment by 1
             }
 
-            while (changeNumber > row){
+            while (changeNumber > row){ // will run this until changeNumber == current row number
                 System.out.print(changeNumber);
-                changeNumber--;
+                changeNumber--; // decrement by 1
             }
             System.out.print(changeNumber);
 
-            row++;
-            System.out.println();
-        }
+            row++; // increment row number by 1 for each outer loop
+            System.out.println(); // prints empty space
+        } // outer for loop
     }
 }
