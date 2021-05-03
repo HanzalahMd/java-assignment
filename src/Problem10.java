@@ -1,7 +1,5 @@
 // Find common value in 3 sorted arrays.
 
-package assignment;
-
 import java.util.ArrayList;
 
 public class Problem10 {
