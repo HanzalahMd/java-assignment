@@ -2,8 +2,6 @@
 // Program to Check Armstrong Number (0 - 999)
 // Armstrong number is the sum of cubes of all its digits
 
-package assignment;
-
 import java.util.Scanner;
 
 public class Problem18 {
