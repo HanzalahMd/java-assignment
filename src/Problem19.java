@@ -1,7 +1,5 @@
 // Problem 19
-// Palindrome
-
-package assignment;
+// Palindrome Number
 
 import java.util.Scanner;
 
