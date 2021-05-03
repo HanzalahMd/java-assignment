@@ -1,18 +1,20 @@
-package assignment;
+// Problem 1
 
-import java.io.IOException;
+import java.util.Scanner;
 
 public class Problem1 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
 
-        InputReader refReader = new InputReader();
-        int numOfRows = refReader.getNumOfRows();
+        // Get the number of rows from the user input
+        Scanner refScanner = new Scanner(System.in);
+        System.out.println("How many rows?");
+        int numOfRows = refScanner.nextInt();
 
-        for(int i = 1; i <= numOfRows; i++){
+        for(int i = 1; i <= numOfRows; i++){ // index ends with user input number
             for(int j = 0; j < i; j++ ){
                 System.out.print("*");
-            }
-            System.out.println();
-        }
+            } // end of inner loop
+            System.out.println(); // print empty line for each outer loop
+        } // end of outer loop
     }
 }
